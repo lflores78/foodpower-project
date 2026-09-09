@@ -766,6 +766,10 @@ footer {
   object-fit: contain;
   object-position: center;
 }
+.logo-aps {
+  width: 170px !important;
+  height: 55px !important;
+}
 
 .support-text {
   font-family: "Playfair Display", Georgia, serif;
