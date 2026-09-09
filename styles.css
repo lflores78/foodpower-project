@@ -735,7 +735,7 @@ footer {
 /* Research support */
 .funding h2 {
   max-width: 950px;
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(1.8rem, 2.4vw, 2.5rem);
   line-height: 1.15;
   margin-bottom: .8rem;
 }
