@@ -732,3 +732,75 @@ footer {
     object-fit: contain;
   }
 }
+/* Research support */
+.funding h2 {
+  max-width: 950px;
+  margin-bottom: .5rem;
+}
+
+.funding-subtitle {
+  margin-top: 0;
+  margin-bottom: 1.8rem;
+  font-style: italic;
+}
+
+.funding-supported {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.support-logos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.support-logos img {
+  width: 150px;
+  height: 55px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.support-text {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.eu-support {
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.eu-support h3 {
+  max-width: 950px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.35;
+  margin-bottom: 1.5rem;
+}
+
+.eu-support .funding-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (max-width: 700px) {
+  .support-logos {
+    gap: 2rem;
+  }
+
+  .support-logos img {
+    width: 130px;
+  }
+
+  .eu-support .funding-content {
+    align-items: flex-start;
+  }
+}
