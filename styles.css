@@ -119,7 +119,7 @@ h3 {
 
 
 /* =====================================================
-   HOMEPAGE HERO
+   HOMEPAGE
    ===================================================== */
 
 .hero {
@@ -168,7 +168,7 @@ h3 {
 
 
 /* =====================================================
-   SECTIONS
+   GENERAL SECTIONS
    ===================================================== */
 
 .section {
@@ -268,8 +268,7 @@ footer {
 
 
 /* =====================================================
-   RESEARCH PAGE
-   KEEP CURRENT DESIGN
+   RESEARCH
    ===================================================== */
 
 .research-page main {
@@ -305,7 +304,7 @@ footer {
 
 /* =====================================================
    INTERIOR PAGES
-   FIELDWORK · LABORATORY · PEOPLE · PUBLICATIONS · VIDEOS
+   Fieldwork · Laboratory · People · Publications · Videos
    ===================================================== */
 
 .fieldwork-page main,
@@ -318,24 +317,28 @@ footer {
 }
 
 
-/* Interior page hero */
+/* =====================================================
+   INTERIOR HERO
+   The key change: no artificial vertical height
+   ===================================================== */
 
 .fieldwork-page .hero,
 .laboratory-page .hero,
 .people-page .hero,
 .publications-page .hero,
 .videos-page .hero {
-  min-height: 0;
-  height: auto;
+  min-height: 0 !important;
+  height: auto !important;
   display: block;
-  padding: 4rem 5vw .5rem;
+  padding: 3.5rem 5vw 0 !important;
+  margin: 0 !important;
   background: transparent;
 }
 
 
 /* =====================================================
    INTERIOR H1
-   10% SMALLER
+   10% smaller than original
    ===================================================== */
 
 .fieldwork-page .hero h1,
@@ -345,11 +348,13 @@ footer {
 .videos-page .hero h1 {
   font-size: clamp(2.34rem, 3.6vw, 3.78rem);
   max-width: 950px;
-  margin: .4rem 0 1.5rem;
+  margin: .3rem 0 1rem !important;
 }
 
 
-/* Interior page lead */
+/* =====================================================
+   INTERIOR LEAD
+   ===================================================== */
 
 .fieldwork-page .hero .lead,
 .laboratory-page .hero .lead,
@@ -358,13 +363,27 @@ footer {
 .videos-page .hero .lead {
   max-width: 800px;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 
 /* =====================================================
-   INTERIOR SECTIONS
-   COMPACT VERTICAL SPACING
+   FIRST SECTION
+   Very small gap after the introductory text
+   ===================================================== */
+
+.fieldwork-page .hero + .section,
+.laboratory-page .hero + .section,
+.people-page .hero + .section,
+.publications-page .hero + .section,
+.videos-page .hero + .section {
+  padding-top: 2rem !important;
+}
+
+
+/* =====================================================
+   OTHER INTERIOR SECTIONS
    ===================================================== */
 
 .fieldwork-page .section,
@@ -372,13 +391,27 @@ footer {
 .people-page .section,
 .publications-page .section,
 .videos-page .section {
-  padding: 1.5rem 5vw 2.5rem;
+  padding: 2rem 5vw 3rem !important;
+}
+
+
+/* =====================================================
+   INTERIOR SECTION LABELS
+   ===================================================== */
+
+.fieldwork-page .section .section-label,
+.laboratory-page .section .section-label,
+.people-page .section .section-label,
+.publications-page .section .section-label,
+.videos-page .section .section-label {
+  margin-top: 0 !important;
+  margin-bottom: .5rem !important;
 }
 
 
 /* =====================================================
    INTERIOR H2
-   20% SMALLER
+   20% smaller
    ===================================================== */
 
 .fieldwork-page .section h2,
@@ -388,12 +421,14 @@ footer {
 .videos-page .section h2 {
   font-size: clamp(1.44rem, 2.16vw, 2.24rem);
   max-width: 900px;
-  margin-top: .3rem;
-  margin-bottom: 1rem;
+  margin-top: 0 !important;
+  margin-bottom: .8rem !important;
 }
 
 
-/* Interior page paragraphs */
+/* =====================================================
+   INTERIOR PARAGRAPHS
+   ===================================================== */
 
 .fieldwork-page .section p,
 .laboratory-page .section p,
@@ -405,11 +440,11 @@ footer {
 
 
 /* =====================================================
-   FIELDWORK IMAGE PLACEHOLDERS
+   FIELDWORK IMAGES
    ===================================================== */
 
 .fieldwork-image-placeholder {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   min-height: 320px;
   display: flex;
   align-items: center;
@@ -428,7 +463,7 @@ footer {
 
 
 /* =====================================================
-   PEOPLE PAGE
+   PEOPLE
    ===================================================== */
 
 .people-section {
@@ -438,11 +473,11 @@ footer {
 }
 
 .person {
-  padding-top: 1rem;
+  padding-top: 0;
 }
 
 .person h2 {
-  margin-top: .5rem;
+  margin-top: 0;
 }
 
 .person h2 a {
@@ -466,11 +501,11 @@ footer {
 
 
 /* =====================================================
-   PUBLICATIONS PAGE
+   PUBLICATIONS
    ===================================================== */
 
 .publication {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   border-top: 1px solid var(--line);
 }
 
@@ -482,6 +517,8 @@ footer {
   font-size: 1.1rem;
   line-height: 1.3;
   max-width: 900px;
+  margin-top: .3rem;
+  margin-bottom: .6rem;
 }
 
 .publication a {
@@ -496,11 +533,11 @@ footer {
 
 
 /* =====================================================
-   VIDEOS PAGE
+   VIDEOS
    ===================================================== */
 
 .video-placeholder {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   min-height: 320px;
   display: flex;
   align-items: center;
@@ -551,7 +588,7 @@ footer {
   }
 
 
-  /* Research mobile — unchanged */
+  /* Research mobile */
 
   .research-page main {
     padding: 3rem 6vw 5rem;
@@ -566,19 +603,20 @@ footer {
   }
 
 
-  /* Interior pages mobile */
+  /* Interior hero */
 
   .fieldwork-page .hero,
   .laboratory-page .hero,
   .people-page .hero,
   .publications-page .hero,
   .videos-page .hero {
-    min-height: 0;
-    padding: 3rem 6vw .5rem;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 3rem 6vw 0 !important;
   }
 
 
-  /* H1 — 10% smaller */
+  /* Interior H1 */
 
   .fieldwork-page .hero h1,
   .laboratory-page .hero h1,
@@ -586,21 +624,44 @@ footer {
   .publications-page .hero h1,
   .videos-page .hero h1 {
     font-size: 2.43rem;
+    margin-bottom: .8rem !important;
   }
 
 
-  /* Lead */
+  /* Interior lead */
 
   .fieldwork-page .hero .lead,
   .laboratory-page .hero .lead,
   .people-page .hero .lead,
   .publications-page .hero .lead,
   .videos-page .hero .lead {
-    margin-bottom: .5rem;
+    margin-bottom: 0 !important;
   }
 
 
-  /* H2 — 20% smaller */
+  /* First section */
+
+  .fieldwork-page .hero + .section,
+  .laboratory-page .hero + .section,
+  .people-page .hero + .section,
+  .publications-page .hero + .section,
+  .videos-page .hero + .section {
+    padding-top: 1.5rem !important;
+  }
+
+
+  /* Other sections */
+
+  .fieldwork-page .section,
+  .laboratory-page .section,
+  .people-page .section,
+  .publications-page .section,
+  .videos-page .section {
+    padding: 1.5rem 6vw 2.5rem !important;
+  }
+
+
+  /* H2 */
 
   .fieldwork-page .section h2,
   .laboratory-page .section h2,
@@ -608,19 +669,8 @@ footer {
   .publications-page .section h2,
   .videos-page .section h2 {
     font-size: 1.92rem;
-    margin-top: .2rem;
-    margin-bottom: .9rem;
-  }
-
-
-  /* Compact sections */
-
-  .fieldwork-page .section,
-  .laboratory-page .section,
-  .people-page .section,
-  .publications-page .section,
-  .videos-page .section {
-    padding: 1rem 6vw 2rem;
+    margin-top: 0 !important;
+    margin-bottom: .7rem !important;
   }
 
 
