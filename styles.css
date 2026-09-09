@@ -11,8 +11,14 @@
   --line: rgba(18,57,74,.16);
 }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   color: var(--ink);
@@ -20,6 +26,8 @@ body {
   font-family: "DM Sans", Arial, sans-serif;
   line-height: 1.6;
 }
+
+/* Header */
 
 .site-header {
   position: sticky;
@@ -43,9 +51,67 @@ body {
   letter-spacing: .12em;
 }
 
-nav { display: flex; flex-wrap: wrap; gap: 1.1rem; }
-nav a { color: var(--ink); text-decoration: none; font-size: .9rem; }
-nav a:hover { color: var(--terracotta); }
+.brand a {
+  color: var(--navy);
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+}
+
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+nav a:hover {
+  color: var(--terracotta);
+}
+
+/* General typography */
+
+h1,
+h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  line-height: 1.05;
+  color: var(--navy);
+}
+
+h1 {
+  font-size: clamp(3rem, 7vw, 6.4rem);
+  margin: .3rem 0 1rem;
+}
+
+h2 {
+  font-size: clamp(2.2rem, 4.5vw, 4.2rem);
+  margin: .5rem 0 1.2rem;
+}
+
+h3 {
+  color: var(--navy);
+  font-size: 1.35rem;
+  margin: .4rem 0 .7rem;
+}
+
+.lead {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  max-width: 560px;
+}
+
+.eyebrow,
+.section-label {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+/* Homepage hero */
 
 .hero {
   min-height: calc(100vh - 70px);
@@ -57,23 +123,21 @@ nav a:hover { color: var(--terracotta); }
   background: linear-gradient(135deg, #f7f2e8 0%, #e9eee9 100%);
 }
 
-.hero-image-wrap { max-width: 760px; margin: auto; }
-.hero-image-wrap img { width: 100%; display: block; }
-
-.hero-copy { max-width: 620px; }
-.eyebrow, .section-label {
-  color: var(--terracotta);
-  text-transform: uppercase;
-  letter-spacing: .16em;
-  font-size: .78rem;
-  font-weight: 700;
+.hero-image-wrap {
+  max-width: 760px;
+  margin: auto;
 }
 
-h1, h2 { font-family: "Playfair Display", Georgia, serif; line-height: 1.05; color: var(--navy); }
-h1 { font-size: clamp(3rem, 7vw, 6.4rem); margin: .3rem 0 1rem; }
-h2 { font-size: clamp(2.2rem, 4.5vw, 4.2rem); margin: .5rem 0 1.2rem; }
-h3 { color: var(--navy); font-size: 1.35rem; margin: .4rem 0 .7rem; }
-.lead { font-size: clamp(1.15rem, 2vw, 1.45rem); max-width: 560px; }
+.hero-image-wrap img {
+  width: 100%;
+  display: block;
+}
+
+.hero-copy {
+  max-width: 620px;
+}
+
+/* Buttons */
 
 .button {
   display: inline-block;
@@ -85,11 +149,27 @@ h3 { color: var(--navy); font-size: 1.35rem; margin: .4rem 0 .7rem; }
   border-radius: 999px;
   font-weight: 600;
 }
-.button:hover { background: var(--terracotta); }
 
-.section { padding: 8vw 10vw; }
-.intro { background: var(--white); }
-.intro p:last-child { max-width: 850px; font-size: 1.15rem; }
+.button:hover {
+  background: var(--terracotta);
+}
+
+/* Sections */
+
+.section {
+  padding: 8vw 10vw;
+}
+
+.intro {
+  background: var(--white);
+}
+
+.intro p:last-child {
+  max-width: 850px;
+  font-size: 1.15rem;
+}
+
+/* Cards */
 
 .cards {
   display: grid;
@@ -98,12 +178,20 @@ h3 { color: var(--navy); font-size: 1.35rem; margin: .4rem 0 .7rem; }
   padding: 0;
   background: var(--line);
 }
+
 .cards article {
   padding: 5vw;
   min-height: 300px;
   background: var(--cream);
 }
-.card-number { color: var(--ochre); font-weight: 700; letter-spacing: .08em; }
+
+.card-number {
+  color: var(--ochre);
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+/* Feature */
 
 .feature {
   display: grid;
@@ -113,12 +201,33 @@ h3 { color: var(--navy); font-size: 1.35rem; margin: .4rem 0 .7rem; }
   background: var(--navy);
   color: var(--white);
 }
-.feature h2 { color: var(--white); }
-.feature .section-label { color: var(--ochre); }
 
-.closing { text-align: center; background: #e5e9df; }
-.closing h2 { max-width: 900px; margin-left: auto; margin-right: auto; }
-.closing p:last-child { font-size: 1.15rem; }
+.feature h2 {
+  color: var(--white);
+}
+
+.feature .section-label {
+  color: var(--ochre);
+}
+
+/* Closing */
+
+.closing {
+  text-align: center;
+  background: #e5e9df;
+}
+
+.closing h2 {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.closing p:last-child {
+  font-size: 1.15rem;
+}
+
+/* Footer */
 
 footer {
   display: flex;
@@ -130,18 +239,14 @@ footer {
   font-size: .8rem;
 }
 
-@media (max-width: 900px) {
-  .site-header { align-items: flex-start; flex-direction: column; }
-  nav { gap: .7rem; }
-  .hero, .feature { grid-template-columns: 1fr; }
-  .hero { padding-top: 3rem; }
-  .cards { grid-template-columns: 1fr; }
-  footer { flex-direction: column; }
-}
-/* Research page */
+
+/* =====================================================
+   RESEARCH PAGE
+   Keep Research typography as currently designed
+   ===================================================== */
 
 .research-page main {
- max-width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 3rem 4vw 5rem;
 }
@@ -170,7 +275,86 @@ footer {
   margin-bottom: 1.2rem;
 }
 
+
+/* =====================================================
+   OTHER INTERIOR PAGES
+   Smaller typography for a more balanced layout
+   ===================================================== */
+
+.fieldwork-page h1,
+.laboratory-page h1,
+.people-page h1,
+.publications-page h1,
+.videos-page h1 {
+  font-size: clamp(2.5rem, 4.5vw, 4.5rem);
+  max-width: 1000px;
+}
+
+.fieldwork-page h2,
+.laboratory-page h2,
+.people-page h2,
+.publications-page h2,
+.videos-page h2 {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  max-width: 900px;
+}
+
+
+/* Interior page leads */
+
+.fieldwork-page .lead,
+.laboratory-page .lead,
+.people-page .lead,
+.publications-page .lead,
+.videos-page .lead {
+  max-width: 800px;
+}
+
+
+/* Interior page sections */
+
+.fieldwork-page .section,
+.laboratory-page .section,
+.people-page .section,
+.publications-page .section,
+.videos-page .section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+
+/* Responsive */
+
 @media (max-width: 900px) {
+
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav {
+    gap: .7rem;
+  }
+
+  .hero,
+  .feature {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 3rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  /* Research */
+
   .research-page main {
     padding: 3rem 6vw 5rem;
   }
@@ -181,5 +365,32 @@ footer {
 
   .research-page h2 {
     font-size: 2.4rem;
+  }
+
+  /* Other pages */
+
+  .fieldwork-page h1,
+  .laboratory-page h1,
+  .people-page h1,
+  .publications-page h1,
+  .videos-page h1 {
+    font-size: 2.8rem;
+  }
+
+  .fieldwork-page h2,
+  .laboratory-page h2,
+  .people-page h2,
+  .publications-page h2,
+  .videos-page h2 {
+    font-size: 2.2rem;
+  }
+
+  .fieldwork-page .section,
+  .laboratory-page .section,
+  .people-page .section,
+  .publications-page .section,
+  .videos-page .section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 }
