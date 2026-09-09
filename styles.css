@@ -153,7 +153,7 @@ footer {
 }
 
 .research-page h2 {
-  font-size: clamp(2.2rem, 3.5vw, 3.6rem);
+  font-size: clamp(2rem, 2.8vw, 3rem);
   max-width: 1050px;
   margin: 0 0 1.5rem;
 }
