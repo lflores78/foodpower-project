@@ -785,7 +785,7 @@ footer {
   margin-bottom: 1.5rem;
 }
 
-.eu-support .funding-content {
+.funding .funding-content {
   display: flex;
   align-items: center;
   gap: 2rem;
