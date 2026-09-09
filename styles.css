@@ -27,7 +27,10 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+
+/* =====================================================
+   HEADER
+   ===================================================== */
 
 .site-header {
   position: sticky;
@@ -72,7 +75,10 @@ nav a:hover {
   color: var(--terracotta);
 }
 
-/* General typography */
+
+/* =====================================================
+   GENERAL TYPOGRAPHY
+   ===================================================== */
 
 h1,
 h2 {
@@ -111,7 +117,10 @@ h3 {
   font-weight: 700;
 }
 
-/* Homepage hero */
+
+/* =====================================================
+   HOMEPAGE HERO
+   ===================================================== */
 
 .hero {
   min-height: calc(100vh - 70px);
@@ -137,7 +146,10 @@ h3 {
   max-width: 620px;
 }
 
-/* Buttons */
+
+/* =====================================================
+   BUTTONS
+   ===================================================== */
 
 .button {
   display: inline-block;
@@ -154,7 +166,10 @@ h3 {
   background: var(--terracotta);
 }
 
-/* Sections */
+
+/* =====================================================
+   SECTIONS
+   ===================================================== */
 
 .section {
   padding: 8vw 10vw;
@@ -169,7 +184,10 @@ h3 {
   font-size: 1.15rem;
 }
 
-/* Cards */
+
+/* =====================================================
+   CARDS
+   ===================================================== */
 
 .cards {
   display: grid;
@@ -191,7 +209,10 @@ h3 {
   letter-spacing: .08em;
 }
 
-/* Feature */
+
+/* =====================================================
+   FEATURE
+   ===================================================== */
 
 .feature {
   display: grid;
@@ -210,7 +231,10 @@ h3 {
   color: var(--ochre);
 }
 
-/* Closing */
+
+/* =====================================================
+   CLOSING
+   ===================================================== */
 
 .closing {
   text-align: center;
@@ -227,7 +251,10 @@ h3 {
   font-size: 1.15rem;
 }
 
-/* Footer */
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
 
 footer {
   display: flex;
@@ -242,7 +269,7 @@ footer {
 
 /* =====================================================
    RESEARCH PAGE
-   Keep Research typography as currently designed
+   KEEP CURRENT RESEARCH SIZES
    ===================================================== */
 
 .research-page main {
@@ -277,37 +304,56 @@ footer {
 
 
 /* =====================================================
-   OTHER INTERIOR PAGES
-   Smaller typography for a more balanced layout
+   INTERIOR PAGES
+   FIELDWORK · LABORATORY · PEOPLE · PUBLICATIONS · VIDEOS
    ===================================================== */
 
-.fieldwork-page h1,
-.laboratory-page h1,
-.people-page h1,
-.publications-page h1,
-.videos-page h1 {
-  font-size: clamp(2.5rem, 4.5vw, 4.5rem);
-  max-width: 1000px;
-}
-
-.fieldwork-page h2,
-.laboratory-page h2,
-.people-page h2,
-.publications-page h2,
-.videos-page h2 {
-  font-size: clamp(1.8rem, 3vw, 3rem);
-  max-width: 900px;
+.fieldwork-page main,
+.laboratory-page main,
+.people-page main,
+.publications-page main,
+.videos-page main {
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 
-/* Interior page leads */
+/* Interior page hero */
 
-.fieldwork-page .lead,
-.laboratory-page .lead,
-.people-page .lead,
-.publications-page .lead,
-.videos-page .lead {
+.fieldwork-page .hero,
+.laboratory-page .hero,
+.people-page .hero,
+.publications-page .hero,
+.videos-page .hero {
+  min-height: auto;
+  display: block;
+  padding: 5rem 5vw 4rem;
+  background: transparent;
+}
+
+
+/* Interior page H1 */
+
+.fieldwork-page .hero h1,
+.laboratory-page .hero h1,
+.people-page .hero h1,
+.publications-page .hero h1,
+.videos-page .hero h1 {
+  font-size: clamp(2.6rem, 4vw, 4.2rem);
+  max-width: 950px;
+  margin: .4rem 0 1.5rem;
+}
+
+
+/* Interior page lead */
+
+.fieldwork-page .hero .lead,
+.laboratory-page .hero .lead,
+.people-page .hero .lead,
+.publications-page .hero .lead,
+.videos-page .hero .lead {
   max-width: 800px;
+  font-size: 1.2rem;
 }
 
 
@@ -318,12 +364,147 @@ footer {
 .people-page .section,
 .publications-page .section,
 .videos-page .section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 4rem 5vw;
 }
 
 
-/* Responsive */
+/* Interior page H2 */
+
+.fieldwork-page .section h2,
+.laboratory-page .section h2,
+.people-page .section h2,
+.publications-page .section h2,
+.videos-page .section h2 {
+  font-size: clamp(1.8rem, 2.7vw, 2.8rem);
+  max-width: 900px;
+}
+
+
+/* Interior page paragraphs */
+
+.fieldwork-page .section p,
+.laboratory-page .section p,
+.people-page .section p,
+.publications-page .section p,
+.videos-page .section p {
+  max-width: 850px;
+}
+
+
+/* =====================================================
+   FIELDWORK IMAGE PLACEHOLDERS
+   ===================================================== */
+
+.fieldwork-image-placeholder {
+  margin-top: 2rem;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e9df;
+  border: 1px solid var(--line);
+}
+
+.fieldwork-image-placeholder p {
+  color: var(--green);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+
+/* =====================================================
+   PEOPLE PAGE
+   ===================================================== */
+
+.people-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.person {
+  padding-top: 1rem;
+}
+
+.person h2 {
+  margin-top: .5rem;
+}
+
+.person h2 a {
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.person h2 a:hover {
+  color: var(--terracotta);
+}
+
+.person-role {
+  font-weight: 600;
+  color: var(--terracotta);
+}
+
+.person-affiliation {
+  font-size: .95rem;
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   PUBLICATIONS PAGE
+   ===================================================== */
+
+.publication {
+  padding: 2rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.publication h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  max-width: 900px;
+}
+
+.publication a {
+  color: var(--terracotta);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.publication a:hover {
+  text-decoration: underline;
+}
+
+
+/* =====================================================
+   VIDEOS PAGE
+   ===================================================== */
+
+.video-placeholder {
+  margin-top: 2rem;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e9df;
+  border: 1px solid var(--line);
+}
+
+.video-placeholder p {
+  color: var(--green);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
 
 @media (max-width: 900px) {
 
@@ -353,7 +534,8 @@ footer {
     flex-direction: column;
   }
 
-  /* Research */
+
+  /* Research mobile */
 
   .research-page main {
     padding: 3rem 6vw 5rem;
@@ -367,22 +549,23 @@ footer {
     font-size: 2.4rem;
   }
 
-  /* Other pages */
 
-  .fieldwork-page h1,
-  .laboratory-page h1,
-  .people-page h1,
-  .publications-page h1,
-  .videos-page h1 {
-    font-size: 2.8rem;
+  /* Interior pages mobile */
+
+  .fieldwork-page .hero,
+  .laboratory-page .hero,
+  .people-page .hero,
+  .publications-page .hero,
+  .videos-page .hero {
+    padding: 3.5rem 6vw 3rem;
   }
 
-  .fieldwork-page h2,
-  .laboratory-page h2,
-  .people-page h2,
-  .publications-page h2,
-  .videos-page h2 {
-    font-size: 2.2rem;
+  .fieldwork-page .hero h1,
+  .laboratory-page .hero h1,
+  .people-page .hero h1,
+  .publications-page .hero h1,
+  .videos-page .hero h1 {
+    font-size: 2.7rem;
   }
 
   .fieldwork-page .section,
@@ -390,7 +573,20 @@ footer {
   .people-page .section,
   .publications-page .section,
   .videos-page .section {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+    padding: 3rem 6vw;
   }
+
+  .fieldwork-page .section h2,
+  .laboratory-page .section h2,
+  .people-page .section h2,
+  .publications-page .section h2,
+  .videos-page .section h2 {
+    font-size: 2.1rem;
+  }
+
+  .people-section {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
 }
