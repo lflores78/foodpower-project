@@ -134,7 +134,7 @@ h3 {
   align-items: center;
   gap: 4vw;
   padding: 5vw;
-  background: linear-gradient(135deg, #f7f2e8 0%, #e9eee9 100%);
+  background: var(--cream);
 }
 
 .hero-image-wrap {
