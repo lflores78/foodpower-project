@@ -460,7 +460,7 @@ footer {
 }
 .fieldwork-image-placeholder img {
   width: 100%;
-  height: 320px;
+  height: 500px;
   object-fit: cover;
   display: block;
 }
