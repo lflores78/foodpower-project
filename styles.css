@@ -378,7 +378,7 @@ footer {
 .people-page .hero + .section,
 .publications-page .hero + .section,
 .videos-page .hero + .section {
-  padding-top: 1rem !important;
+  padding-top: 0.5rem !important;
 }
 
 
