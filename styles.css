@@ -328,7 +328,7 @@ footer {
   min-height: 0;
   height: auto;
   display: block;
-  padding: 4rem 5vw 2rem;
+  padding: 4rem 5vw .5rem;
   background: transparent;
 }
 
@@ -358,12 +358,13 @@ footer {
 .videos-page .hero .lead {
   max-width: 800px;
   font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 
 /* =====================================================
    INTERIOR SECTIONS
-   REDUCED VERTICAL SPACE
+   COMPACT VERTICAL SPACING
    ===================================================== */
 
 .fieldwork-page .section,
@@ -371,7 +372,7 @@ footer {
 .people-page .section,
 .publications-page .section,
 .videos-page .section {
-  padding: 2.5rem 5vw;
+  padding: 1.5rem 5vw 2.5rem;
 }
 
 
@@ -573,7 +574,7 @@ footer {
   .publications-page .hero,
   .videos-page .hero {
     min-height: 0;
-    padding: 3rem 6vw 1.5rem;
+    padding: 3rem 6vw .5rem;
   }
 
 
@@ -588,6 +589,17 @@ footer {
   }
 
 
+  /* Lead */
+
+  .fieldwork-page .hero .lead,
+  .laboratory-page .hero .lead,
+  .people-page .hero .lead,
+  .publications-page .hero .lead,
+  .videos-page .hero .lead {
+    margin-bottom: .5rem;
+  }
+
+
   /* H2 — 20% smaller */
 
   .fieldwork-page .section h2,
@@ -596,15 +608,19 @@ footer {
   .publications-page .section h2,
   .videos-page .section h2 {
     font-size: 1.92rem;
+    margin-top: .2rem;
+    margin-bottom: .9rem;
   }
 
+
+  /* Compact sections */
 
   .fieldwork-page .section,
   .laboratory-page .section,
   .people-page .section,
   .publications-page .section,
   .videos-page .section {
-    padding: 2rem 6vw;
+    padding: 1rem 6vw 2rem;
   }
 
 
