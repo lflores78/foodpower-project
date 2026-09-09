@@ -534,7 +534,12 @@ footer {
 .funding {
   padding: 2.5rem 10vw 3rem !important;
 }
-
+.funding-logo img {
+  width: 220px !important;
+  max-width: 220px !important;
+  height: auto;
+  display: block;
+}
 .funding .section-label {
   margin-bottom: .8rem;
 }
