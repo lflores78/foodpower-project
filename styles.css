@@ -274,46 +274,11 @@ footer {
 
 
 /* =====================================================
-   RESEARCH
-   ===================================================== */
-
-.research-page main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 3rem 4vw 5rem;
-}
-
-.research-page h1 {
-  font-size: clamp(3rem, 5vw, 5rem);
-  max-width: 1100px;
-  margin: 0 0 2rem;
-}
-
-.research-page h2 {
-  font-size: clamp(2rem, 2.8vw, 3rem);
-  max-width: 1050px;
-  margin: 0 0 1.5rem;
-}
-
-.research-page p {
-  max-width: 900px;
-}
-
-.research-page section {
-  margin-bottom: 3.5rem;
-}
-
-.research-page .section-label {
-  margin-bottom: 1.2rem;
-}
-
-
-/* =====================================================
    INTERIOR PAGES
-   Fieldwork · Laboratory · People · Publications · Videos
+   Collections · Laboratory · People · Publications · Videos
    ===================================================== */
 
-.fieldwork-page main,
+.collections-page main,
 .laboratory-page main,
 .people-page main,
 .publications-page main,
@@ -328,7 +293,7 @@ footer {
    The key change: no artificial vertical height
    ===================================================== */
 
-.fieldwork-page .hero,
+.collections-page .hero,
 .laboratory-page .hero,
 .people-page .hero,
 .publications-page .hero,
@@ -347,7 +312,7 @@ footer {
    10% smaller than original
    ===================================================== */
 
-.fieldwork-page .hero h1,
+.collections-page .hero h1,
 .laboratory-page .hero h1,
 .people-page .hero h1,
 .publications-page .hero h1,
@@ -362,7 +327,7 @@ footer {
    INTERIOR LEAD
    ===================================================== */
 
-.fieldwork-page .hero .lead,
+.collections-page .hero .lead,
 .laboratory-page .hero .lead,
 .people-page .hero .lead,
 .publications-page .hero .lead,
@@ -379,7 +344,7 @@ footer {
    Very small gap after the introductory text
    ===================================================== */
 
-.fieldwork-page .hero + .section,
+.collections-page .hero + .section,
 .laboratory-page .hero + .section,
 .people-page .hero + .section,
 .publications-page .hero + .section,
@@ -392,7 +357,7 @@ footer {
    OTHER INTERIOR SECTIONS
    ===================================================== */
 
-.fieldwork-page .section,
+.collections-page .section,
 .laboratory-page .section,
 .people-page .section,
 .publications-page .section,
@@ -405,7 +370,7 @@ footer {
    INTERIOR SECTION LABELS
    ===================================================== */
 
-.fieldwork-page .section .section-label,
+.collections-page .section .section-label,
 .laboratory-page .section .section-label,
 .people-page .section .section-label,
 .publications-page .section .section-label,
@@ -420,7 +385,7 @@ footer {
    20% smaller
    ===================================================== */
 
-.fieldwork-page .section h2,
+.collections-page .section h2,
 .laboratory-page .section h2,
 .people-page .section h2,
 .publications-page .section h2,
@@ -436,7 +401,7 @@ footer {
    INTERIOR PARAGRAPHS
    ===================================================== */
 
-.fieldwork-page .section p,
+.collections-page .section p,
 .laboratory-page .section p,
 .people-page .section p,
 .publications-page .section p,
