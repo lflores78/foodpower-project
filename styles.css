@@ -485,7 +485,13 @@ footer {
   font-weight: 500;
 }
 
-
+.person img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
+}
 /* =====================================================
    PUBLICATIONS
    ===================================================== */
