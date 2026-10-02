@@ -785,3 +785,46 @@ footer {
     align-items: flex-start;
   }
 }
+/* =====================================================
+   RESEARCH AUTHORIZATIONS
+===================================================== */
+
+.authorizations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.authorization-document {
+  text-align: center;
+}
+
+.authorization-document a {
+  display: block;
+}
+
+.authorization-document img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  display: block;
+  background: #ffffff;
+  border: 1px solid var(--line);
+}
+
+.authorization-document p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--navy);
+}
+
+@media (max-width: 700px) {
+  .authorizations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .authorization-document img {
+    max-height: none;
+  }
+}
