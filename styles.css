@@ -828,3 +828,16 @@ footer {
     max-height: none;
   }
 }
+.video-embed {
+  width: 100%;
+  max-width: 900px;
+  margin: 1.5rem 0 .5rem;
+}
+
+.video-embed iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: block;
+  border: 0;
+}
