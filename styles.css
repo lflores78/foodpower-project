@@ -453,13 +453,18 @@ footer {
    ===================================================== */
 .experimental-image {
   margin-top: 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .experimental-image img {
-  width: 100%;
-  height: auto;
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
+
 .people-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
