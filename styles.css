@@ -451,7 +451,15 @@ footer {
 /* =====================================================
    PEOPLE
    ===================================================== */
+.experimental-image {
+  margin-top: 1.5rem;
+}
 
+.experimental-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .people-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
