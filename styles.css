@@ -137,6 +137,13 @@ h3 {
   padding: 5vw;
   background: var(--cream);
 }
+.home-hero {
+  background-image:
+    linear-gradient(rgba(246, 241, 231, 0.72), rgba(246, 241, 231, 0.72)),
+    url('hero-landscape.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
 .hero-image-wrap {
   max-width: 760px;
