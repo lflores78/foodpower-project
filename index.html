@@ -75,5 +75,17 @@
     <span>FOODPOWER</span>
     <span>Foodways to Power: Diet and Inequality in the Ancient Andes</span>
   </footer>
+<script>
+  window.addEventListener('scroll', function () {
+    const header = document.querySelector('.site-header');
+
+    if (window.scrollY > 80) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+  
 </body>
 </html>
