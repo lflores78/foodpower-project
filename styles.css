@@ -905,3 +905,8 @@ footer {
   display: block;
   border: 0;
 }
+@media (max-width: 900px) {
+  .hero-cover {
+    background-attachment: scroll;
+  }
+}
