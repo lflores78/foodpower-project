@@ -690,16 +690,25 @@ footer {
     flex-direction: row;
   }
 
-  nav {
-  gap: .35rem .65rem;
-  flex-wrap: wrap;
-  overflow-x: visible;
-  white-space: normal;
-  width: auto;
-  flex: 1;
-  min-width: 0;
-}
+  .brand {
+    font-size: 1rem;
+    letter-spacing: .08em;
+  }
 
+  .brand img {
+    width: 28px;
+    height: 28px;
+  }
+
+  nav {
+    gap: .7rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: auto;
+    flex: 1;
+    min-width: 0;
+  }
 nav a {
   font-size: .78rem;
 }
