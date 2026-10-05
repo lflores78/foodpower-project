@@ -953,4 +953,19 @@ footer {
   .hero-cover {
     background-attachment: scroll;
   }
+
+  .site-header {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+
+  nav a {
+    color: white;
+  }
+
+  .brand {
+    color: white;
+  }
 }
