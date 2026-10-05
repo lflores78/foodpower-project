@@ -45,6 +45,12 @@ body {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
+.home-page .site-header {
+  background: rgba(246, 241, 231, 0.15);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+}
 
 .brand {
   color: var(--navy);
