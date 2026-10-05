@@ -1072,8 +1072,8 @@ footer {
 
 .research-intro {
   display: grid !important;
-  grid-template-columns: minmax(0, 1.5fr) minmax(320px, 1fr) !important;
-  gap: 4rem;
+  grid-template-columns: 55% 45% !important;
+  gap: 2rem !important;
   align-items: center;
 }
 
