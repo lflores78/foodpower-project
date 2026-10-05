@@ -155,10 +155,17 @@ h3 {
 
 .hero-cover h1 {
   margin: 0 0 1.5rem;
-  color: white;
   font-size: clamp(3rem, 6vw, 6rem);
-  letter-spacing: .08em;
+  letter-spacing: .06em;
   font-weight: 700;
+}
+
+.cover-food {
+  color: #123f52;
+}
+
+.cover-power {
+  color: #b84b2f;
 }
 
 .hero-cover p {
