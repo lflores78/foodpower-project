@@ -692,7 +692,9 @@ footer {
   flex-wrap: nowrap;
   overflow-x: auto;
   white-space: nowrap;
-  width: 100%;
+  width: auto;
+  flex: 1;
+  min-width: 0;
 }
 
   .hero,
