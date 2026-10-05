@@ -72,6 +72,9 @@ body:has(.hero-cover) .site-header.scrolled {
   border-bottom: 1px solid var(--line);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
+body:has(.hero-cover) .site-header.scrolled + main {
+  padding-top: 5rem;
+}
 .brand {
   color: var(--navy);
   text-decoration: none;
