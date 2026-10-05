@@ -996,3 +996,53 @@ footer {
   font-size: .95rem;
   color: var(--muted);
 }
+
+/* =====================================================
+   RESEARCH SUPPORT + HOST INSTITUTION
+===================================================== */
+
+.support-section {
+  padding: 4rem 1.5rem 4.5rem;
+  background: var(--paper);
+}
+
+.support-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.support-grid .funding-section {
+  padding: 0;
+  margin: 0;
+}
+
+.support-grid .host-institution {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.support-grid .host-institution img {
+  display: block;
+  width: 240px;
+  max-width: 80%;
+  height: auto;
+  margin: 1.5rem auto 1.2rem;
+}
+
+.support-grid .host-institution p:last-child {
+  margin: 0;
+  font-size: .95rem;
+  color: var(--muted);
+}
+
+@media (max-width: 800px) {
+  .support-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+}
