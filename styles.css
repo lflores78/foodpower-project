@@ -1049,10 +1049,13 @@ footer {
 @media (max-width: 900px) {
 
   .site-header.scrolled nav a,
-  .site-header.scrolled .brand {
+  .site-header.scrolled .brand,
+  body:not(:has(.hero-cover)) .site-header nav a,
+  body:not(:has(.hero-cover)) .site-header .brand {
     color: var(--ink);
   }
 
+}
 }
 /* =====================================================
    RESEARCH INTRO
