@@ -1046,3 +1046,11 @@ footer {
     gap: 3.5rem;
   }
 }
+@media (max-width: 900px) {
+
+  .site-header.scrolled nav a,
+  .site-header.scrolled .brand {
+    color: var(--ink);
+  }
+
+}
