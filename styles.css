@@ -691,15 +691,18 @@ footer {
   }
 
   nav {
-  gap: .7rem;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  white-space: nowrap;
+  gap: .35rem .65rem;
+  flex-wrap: wrap;
+  overflow-x: visible;
+  white-space: normal;
   width: auto;
   flex: 1;
   min-width: 0;
 }
 
+nav a {
+  font-size: .78rem;
+}
   .hero,
   .feature {
     grid-template-columns: 1fr;
