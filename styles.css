@@ -688,8 +688,12 @@ footer {
   }
 
   nav {
-    gap: .7rem;
-  }
+  gap: .7rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+}
 
   .hero,
   .feature {
