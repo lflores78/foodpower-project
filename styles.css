@@ -171,7 +171,7 @@ h3 {
 .hero-cover p {
   margin: 0 auto;
   max-width: 850px;
-  color: white;
+ color: #f6f1e7;
   font-size: clamp(1rem, 1.5vw, 1.35rem);
   line-height: 1.5;
 }
