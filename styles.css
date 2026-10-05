@@ -969,3 +969,30 @@ footer {
     color: white;
   }
 }
+/* =====================================================
+   HOST INSTITUTION
+===================================================== */
+
+.host-institution {
+  text-align: center;
+  padding: 4rem 1.5rem 4.5rem;
+  background: var(--paper);
+}
+
+.host-institution .section-label {
+  margin-bottom: 1.5rem;
+}
+
+.host-institution img {
+  display: block;
+  width: 280px;
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto 1.2rem;
+}
+
+.host-institution p:last-child {
+  margin: 0;
+  font-size: .95rem;
+  color: var(--muted);
+}
