@@ -157,7 +157,17 @@ h3 {
 
 .hero-cover-content {
   max-width: 1000px;
+  width: 100%;
   padding: 3rem;
+  box-sizing: border-box;
+}
+
+.hero-cover-content img {
+  display: block;
+  width: min(900px, 90vw);
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1.5rem;
 }
 
 .hero-cover h1 {
