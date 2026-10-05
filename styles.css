@@ -1054,3 +1054,41 @@ footer {
   }
 
 }
+/* =====================================================
+   RESEARCH INTRO
+===================================================== */
+
+.research-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(260px, 0.8fr);
+  gap: 4rem;
+  align-items: center;
+}
+
+.research-intro-text {
+  min-width: 0;
+}
+
+.research-intro-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.research-intro-logo img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .research-intro {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .research-intro-logo img {
+    max-width: 320px;
+  }
+}
