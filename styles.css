@@ -701,14 +701,15 @@ footer {
   }
 
   nav {
-    gap: .7rem;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    white-space: nowrap;
-    width: auto;
-    flex: 1;
-    min-width: 0;
-  }
+  gap: .45rem;
+  flex-wrap: wrap;
+  overflow: visible;
+  white-space: normal;
+  width: auto;
+  flex: 1;
+  min-width: 0;
+  justify-content: flex-end;
+}
 nav a {
   font-size: .78rem;
 }
