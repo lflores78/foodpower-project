@@ -139,9 +139,7 @@ h3 {
   justify-content: center;
   text-align: center;
 
-  background-image:
-    linear-gradient(rgba(10, 28, 38, 0.28), rgba(10, 28, 38, 0.28)),
-    url('hero-landscape.png');
+  background: url('hero-landscape.png') center center / cover no-repeat;
 
   background-size: cover;
   background-position: center;
