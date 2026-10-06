@@ -604,7 +604,7 @@ footer {
    ===================================================== */
 
 .publication {
-  padding: 1.0rem 0;
+  padding: 1.5rem 0 2.5rem;
   border-top: 1px solid var(--line);
 }
 
