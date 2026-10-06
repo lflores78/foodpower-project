@@ -691,14 +691,14 @@ footer {
   }
 
   .brand {
-    font-size: 1rem;
-    letter-spacing: .08em;
-  }
+  font-size: 1.15rem;
+  letter-spacing: .09em;
+}
 
-  .brand img {
-    width: 28px;
-    height: 28px;
-  }
+.brand img {
+  width: 30px;
+  height: 30px;
+}
 
   nav {
   gap: .45rem;
